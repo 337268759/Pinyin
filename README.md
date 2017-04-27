@@ -14,7 +14,7 @@ Pinyin
 使用 Composer 安装:
 
 ```
-composer require "overtrue/pinyin:~3.0"
+composer require "337268759/topinyin"
 ```
 
 ## 使用

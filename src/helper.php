@@ -2,7 +2,8 @@
 
 function Pinyin( $string = '', $link = '', $type = 'permalink' ) {
 	$pinyin = new Jun\Pinyin\Pinyin();
-	if ( $type == 'name' ) {
+	$type   = strtolower( $type );
+	if ( $type == 'name' OR $type == 'convert' ) {
 		if ( ! in_array( $link, [ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ] ) ) {
 			$link = PINYIN_NONE;
 		}
