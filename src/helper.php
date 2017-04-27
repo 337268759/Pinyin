@@ -1,6 +1,6 @@
 <?php
 
-function Pinyin( $string = '', $type = 'permalink', $link = '' ) {
+function Pinyin( $string = '', $link = '', $type = 'permalink' ) {
 	$pinyin = new Jun\Pinyin\Pinyin();
 	if ( $type == 'name' ) {
 		if ( ! in_array( $link, [ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ] ) ) {
@@ -12,5 +12,5 @@ function Pinyin( $string = '', $type = 'permalink', $link = '' ) {
 		}
 	}
 
-	return $pinyin->permalink( $string, $link );
+	return $pinyin->$type( $string, $link );
 }
