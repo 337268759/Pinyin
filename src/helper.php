@@ -1,17 +1,22 @@
 <?php
 
-function Pinyin( $string = '', $link = '', $type = 'permalink' ) {
+function Pinyin( $String = '', $linkString = '', $type = 'permalink' ) {
+
 	$pinyin = new Jun\Pinyin\Pinyin();
-	$type   = strtolower( $type );
+
+	$type = strtolower( $type );
+
 	if ( $type == 'name' OR $type == 'convert' ) {
-		if ( ! in_array( $link, [ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ] ) ) {
-			$link = PINYIN_NONE;
+		if ( ! in_array( $linkString, [ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ] ) ) {
+			$linkString = PINYIN_NONE;
 		}
 	} elseif ( $type == 'sentence' ) {
-		if ( ! empty( $link ) ) {
-			$link = true;
+		if ( ! empty( $linkString ) ) {
+			$linkString = true;
+		} else {
+			$linkString = false;
 		}
 	}
 
-	return $pinyin->$type( $string, $link );
+	return $pinyin->$type( $String, $linkString );
 }
