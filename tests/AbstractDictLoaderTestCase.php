@@ -6,9 +6,9 @@
  * (c) 2016 overtrue <i@overtrue.me>
  */
 
-namespace Overtrue\Pinyin\Test;
+namespace Jun\Pinyin\Test;
 
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\Pinyin;
 use PHPUnit_Framework_TestCase;
 
 abstract class AbstractDictLoaderTestCase extends PHPUnit_Framework_TestCase

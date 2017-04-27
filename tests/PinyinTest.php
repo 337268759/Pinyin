@@ -6,11 +6,11 @@
  * (c) 2016 overtrue <i@overtrue.me>
  */
 
-namespace Overtrue\Pinyin\Test;
+namespace Jun\Pinyin\Test;
 
 use Closure;
-use Overtrue\Pinyin\DictLoaderInterface;
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\DictLoaderInterface;
+use Jun\Pinyin\Pinyin;
 use PHPUnit_Framework_TestCase;
 
 class PinyinTest extends PHPUnit_Framework_TestCase

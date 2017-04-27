@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mac
- * Date: 2017/4/27
- * Time: 11:49
- */
+
+function Pinyin( $string = '', $type = 'permalink', $link = '' ) {
+	$pinyin = new Jun\Pinyin\Pinyin();
+	if ( $type == 'name' ) {
+		if ( ! in_array( $link, [ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ] ) ) {
+			$link = PINYIN_NONE;
+		}
+	} elseif ( $type == 'sentence' ) {
+		if ( ! empty( $link ) ) {
+			$link = true;
+		}
+	}
+
+	return $pinyin->permalink( $string, $link );
+}

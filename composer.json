@@ -4,6 +4,7 @@
     "keywords": [
         "chinese",
         "pinyin",
+        "topinyin",
         "cn2pinyin"
     ],
     "homepage": "https://github.com/337268759/Pinyin.git",
@@ -16,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Overtrue\\Pinyin\\": "src/"
+            "Jun\\Pinyin\\": "src/"
         },
         "files": [
             "src/helper.php"
@@ -24,13 +25,10 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Overtrue\\Pinyin\\Test\\": "tests/"
+            "Jun\\Pinyin\\Test\\": "tests/"
         }
     },
     "require": {
         "php":">=5.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.8"
     }
 }

@@ -6,7 +6,7 @@
  * (c) 2016 Seven Du <shiweidu@outlook.com>
  */
 
-namespace Overtrue\Pinyin;
+namespace Jun\Pinyin;
 
 use Closure;
 use Exception;

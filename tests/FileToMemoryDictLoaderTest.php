@@ -6,14 +6,14 @@
  * @author Garveen <acabin@live.com>
  */
 
-namespace Overtrue\Pinyin\Test;
+namespace Jun\Pinyin\Test;
 
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\Pinyin;
 
 class FileToMemoryDictLoaderTest extends AbstractDictLoaderTestCase
 {
     protected function setUp()
     {
-        $this->pinyin = new Pinyin('Overtrue\Pinyin\MemoryFileDictLoader');
+        $this->pinyin = new Pinyin('Jun\Pinyin\MemoryFileDictLoader');
     }
 }

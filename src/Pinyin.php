@@ -6,7 +6,7 @@
  * (c) 2016 overtrue <i@overtrue.me>
  */
 
-namespace Overtrue\Pinyin;
+namespace Jun\Pinyin;
 
 use InvalidArgumentException;
 
@@ -33,7 +33,7 @@ class Pinyin
     /**
      * Dict loader.
      *
-     * @var \Overtrue\Pinyin\DictLoaderInterface
+     * @var \Jun\Pinyin\DictLoaderInterface
      */
     protected $loader;
 
@@ -61,7 +61,7 @@ class Pinyin
      */
     public function __construct($loaderName = null)
     {
-        $this->loader = $loaderName ?: 'Overtrue\\Pinyin\\FileDictLoader';
+        $this->loader = $loaderName ?: 'Jun\\Pinyin\\FileDictLoader';
     }
 
     /**
@@ -165,7 +165,7 @@ class Pinyin
     /**
      * Loader setter.
      *
-     * @param \Overtrue\Pinyin\DictLoaderInterface $loader
+     * @param \Jun\Pinyin\DictLoaderInterface $loader
      *
      * @return $this
      */
@@ -179,7 +179,7 @@ class Pinyin
     /**
      * Return dict loader,.
      *
-     * @return \Overtrue\Pinyin\DictLoaderInterface
+     * @return \Jun\Pinyin\DictLoaderInterface
      */
     public function getLoader()
     {
@@ -238,7 +238,7 @@ class Pinyin
      * Convert Chinese Surname to pinyin.
      *
      * @param string                               $string
-     * @param \Overtrue\Pinyin\DictLoaderInterface $dictLoader
+     * @param \Jun\Pinyin\DictLoaderInterface $dictLoader
      *
      * @return string
      */

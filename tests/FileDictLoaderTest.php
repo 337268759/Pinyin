@@ -6,9 +6,9 @@
  * @author Garveen <acabin@live.com>
  */
 
-namespace Overtrue\Pinyin\Test;
+namespace Jun\Pinyin\Test;
 
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\Pinyin;
 
 class FileDictLoaderTest extends AbstractDictLoaderTestCase
 {

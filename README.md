@@ -28,14 +28,14 @@ composer require "overtrue/pinyin:~3.0"
 ### 拼音数组
 
 ```php
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\Pinyin;
 
 // 小内存型
 $pinyin = new Pinyin(); // 默认
 // 内存型
-// $pinyin = new Pinyin('Overtrue\Pinyin\MemoryFileDictLoader');
+// $pinyin = new Pinyin('Jun\Pinyin\MemoryFileDictLoader');
 // I/O型
-// $pinyin = new Pinyin('Overtrue\Pinyin\GeneratorFileDictLoader');
+// $pinyin = new Pinyin('Jun\Pinyin\GeneratorFileDictLoader');
 
 $pinyin->convert('带着希望去旅行，比到达终点更美好');
 // ["dai", "zhe", "xi", "wang", "qu", "lv", "xing", "bi", "dao", "da", "zhong", "dian", "geng", "mei", "hao"]
@@ -94,13 +94,6 @@ $pinyin->sentence('带着希望去旅行，比到达终点更美好！', true);
 $pinyin->name('单某某'); // ['shan', 'mou', 'mou']
 $pinyin->name('单某某', PINYIN_UNICODE); // ["shàn","mǒu","mǒu"]
 ```
-
-## 在 Laravel 中使用
-
-独立的包在这里：[overtrue/laravel-pinyin](https://github.com/overtrue/laravel-pinyin)
-
-## Contribution
-欢迎提意见及完善补充词库 [`overtrue/pinyin-dictionary-maker`](https://github.com/overtrue/pinyin-dictionary-maker/tree/master/patches) :kiss:
 
 ## 参考
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Pinyin\Test;
+namespace Jun\Pinyin\Test;
 
-use Overtrue\Pinyin\Pinyin;
+use Jun\Pinyin\Pinyin;
 
 /**
  * Generator syntax(yield) Dict File loader test.
@@ -13,6 +13,6 @@ class GeneratorFileDictLoaderTest extends AbstractDictLoaderTestCase
 {
     protected function setUp()
     {
-        $this->pinyin = new Pinyin('Overtrue\\Pinyin\\GeneratorFileDictLoader');
+        $this->pinyin = new Pinyin('Jun\\Pinyin\\GeneratorFileDictLoader');
     }
 }
