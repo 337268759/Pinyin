@@ -4,7 +4,8 @@
     "keywords": [
         "chinese",
         "pinyin",
-        "pinyin",
+        "topinyin",
+        "cntopinyin",
         "cn2pinyin"
     ],
     "homepage": "https://github.com/337268759/Pinyin.git",
