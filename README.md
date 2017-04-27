@@ -9,7 +9,7 @@ Pinyin
 使用 Composer 安装:
 
 ```
-composer require "337268759/topinyin"
+composer require "337268759/pinyin"
 ```
 
 ## 使用
