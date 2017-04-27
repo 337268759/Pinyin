@@ -40,7 +40,7 @@ $pinyin = new Pinyin(); // 默认
 $pinyin->convert('带着希望去旅行，比到达终点更美好');
 // ["dai", "zhe", "xi", "wang", "qu", "lv", "xing", "bi", "dao", "da", "zhong", "dian", "geng", "mei", "hao"]
 
-$pinyin->convert('带着希望去旅行，比到达终点更美好', PINYIN_UNICODE);
+$pinyin->convert('带着希望去，比到达终点更美好', PINYIN_UNICODE);
 // ["dài","zhe","xī","wàng","qù","lǚ","xíng","bǐ","dào","dá","zhōng","diǎn","gèng","měi","hǎo"]
 
 $pinyin->convert('带着希望去旅行，比到达终点更美好', PINYIN_ASCII);
@@ -61,7 +61,18 @@ $pinyin->convert('带着希望去旅行，比到达终点更美好', PINYIN_ASCI
 | `PINYIN_UNICODE`  | UNICODE 式音调：`měi hǎo`                    |
 
 
-### 通用函数生成（链接/首字母/段文/姓名）
+### 通用函数生成（拼音数组/链接/首字母/段文/姓名）
+
+|      参数      | 描述                                                |
+| -------------  | ---------------------------------------------------|
+| `$String`      | 需要翻译字符串                           |
+| `$linkString`  | 链接字符串/音标/姓名音标: （`空` / `[ true, false ]`/ `[ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ]`）                    |
+| `$Type`      | 输出类型 ( 数组：`convert`, 链接：`permalink` , 首字母：`abbr`, 段文：`sentence`, 姓名：`name` )                  |
+```php
+Pinyin( $String, $linkString, $Type );
+演示：
+Pinyin( '带着希望去旅行', '-', 'permalink' ); // dai-zhe-xi-wang-qu-lv-xing
+```
 
 ### 生成用于链接的拼音字符串
 
