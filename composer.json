@@ -5,8 +5,8 @@
         "chinese",
         "pinyin",
         "topinyin",
-        "cntopinyin",
-        "cn2pinyin"
+        "cn2pinyin",
+        "cntopinyin"
     ],
     "homepage": "https://github.com/337268759/Pinyin.git",
     "license": "MIT",
