@@ -19,6 +19,20 @@ composer require "337268759/topinyin"
 
 ## 使用
 
+### 通用函数生成（拼音数组/链接/首字母/段文/姓名）:
+
+|      参数      | 描述                                                |
+| -------------  | ---------------------------------------------------|
+| `$String`      | 需要翻译字符串                           |
+| `$linkString`  | 链接字符串/音标/姓名音标: (`空` / `[ true, false ]`/ `[ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ]`)                    |
+| `$Type`      | 输出类型 ( 数组：`convert`, 链接：`permalink` , 首字母：`abbr`, 段文：`sentence`, 姓名：`name` )                  |
+
+```php
+Pinyin( $String = '', $linkString = '', $type = 'permalink' );
+演示：
+Pinyin( '带着希望去旅行', '-', 'permalink' ); // dai-zhe-xi-wang-qu-lv-xing
+```
+
 可选转换方案：
 
     - 内存型，适用于服务器内存空间较富余，优点：转换快
@@ -60,19 +74,6 @@ $pinyin->convert('带着希望去旅行，比到达终点更美好', PINYIN_ASCI
 | `PINYIN_ASCII`  | 带数字式音调：  `mei3 hao3`                    |
 | `PINYIN_UNICODE`  | UNICODE 式音调：`měi hǎo`                    |
 
-
-### 通用函数生成（拼音数组/链接/首字母/段文/姓名）
-
-|      参数      | 描述                                                |
-| -------------  | ---------------------------------------------------|
-| `$String`      | 需要翻译字符串                           |
-| `$linkString`  | 链接字符串/音标/姓名音标: （`空` / `[ true, false ]`/ `[ PINYIN_NONE, PINYIN_ASCII, PINYIN_UNICODE ]`）                    |
-| `$Type`      | 输出类型 ( 数组：`convert`, 链接：`permalink` , 首字母：`abbr`, 段文：`sentence`, 姓名：`name` )                  |
-```php
-Pinyin( $String, $linkString, $Type );
-演示：
-Pinyin( '带着希望去旅行', '-', 'permalink' ); // dai-zhe-xi-wang-qu-lv-xing
-```
 
 ### 生成用于链接的拼音字符串
 
